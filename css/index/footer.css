@@ -1,0 +1,21 @@
+footer {
+	background: linear-gradient(149deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 42%, rgb(21, 255, 0) 72%, rgb(0, 247, 0) 100%);
+    animation: gradient 10s infinite linear;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 150px;
+	background-size: 400%;
+}
+/* @keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+} */

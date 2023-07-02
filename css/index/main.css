@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+	padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 2;
+  color: white;
+}
+/*1*/
+.main {
+	background: linear-gradient(to top, transparent, rgb(0, 0, 0)), url("64b18cf52a.jpg");
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	font-size: 1.5em;
+	text-shadow: 
+	2px 0 2px #000, 
+	0 2px 2px #000, 
+	-2px 0 2px #000, 
+	0 -2px 2px #000;
+	color: white;
+}
+ul {
+	margin: 10px;
+}
+li {
+	margin-left: 20px;
+}
+/*2*/
+.context {
+	border-radius: 6px;
+	background: linear-gradient(70deg, rgb(0, 162, 255), rgb(18, 38, 92));
+}
+.about {
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color: #7a7f85;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 50%;
+	grid-template-rows: auto;
+	align-items: left, center;
+	justify-content: center;
+	justify-items: center;
+	padding: 3%;
+	gap: 4px;
+}
+.blockimg {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.block {
+	text-align: left;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    background: #003c8149;
+    display: block;
+	height: auto;
+	width: 100%;
+}
+p, h2 {
+	padding: 5px;
+}
+.blockimg > img {
+	max-width: 100%; 
+	max-height: 100%;
+	margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%)
+}
+/* .rmenu {
+	height: 100%;
+	width: 100%;
+	grid-column: 2/2;
+	grid-row: span 2;
+	background-color: red;
+} */
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	.about {
+		grid-template-columns: 55%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+	.about {
+		grid-template-columns: 65%;
+	}
+}
+@media only screen and (min-width: 576px) and (max-width:767px) {
+	.about {
+		grid-template-columns: 75%;
+		}
+}
+@media only screen and (min-width: 478px) and (max-width:575px) {
+	.about {
+		grid-template-columns: 95%;	
+	}
+	#elbrus {
+		height: 30vh;
+		width: 40vh;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:477px) {
+	.about {
+		grid-template-columns: 100%;
+	}
+	#elbrus {
+		height: 25vh;
+		width: 32vh;
+	}
+}
